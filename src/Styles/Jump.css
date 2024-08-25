@@ -1,0 +1,54 @@
+.jump-container {
+    background-color: white;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-img {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .uk-logo {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .icds-logo {
+    float: left;
+    margin-left: 20px;
+  }
+  
+  .main-title {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    color: blue;
+    margin-bottom: 10px;
+  }
+  
+  .sub-title {
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #ff0000;
+  }
+  
+  @media (max-width: 768px) {
+    .logo-img {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .jump-container {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+  

@@ -1,0 +1,20 @@
+.document-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .document-title {
+    color: green;
+  }
+  
+  .document-subtitle {
+    color: #1f14a3;
+  }
+  
+  .document-image {
+    max-width: 100%;
+    height: auto;
+  }
+  

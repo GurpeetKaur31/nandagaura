@@ -1,0 +1,127 @@
+/* Container styling */
+.loginform-section {
+    border: 2px solid #1f14a3;
+    border-radius: 12px;
+    padding: 20px;
+    background: #f9f9f9;
+    min-height: 500px;
+  }
+  
+  /* Title styling */
+  .loginform-title {
+    text-align: center;
+    color: #1f14a3;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input styling */
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #007bff;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .form-control::placeholder {
+    color: #aaa;
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    width: 100%;
+    background-color: #0a0536;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #141088;
+    transform: scale(1.05);
+  }
+  
+  /* Footer links */
+  .loginform-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn-info {
+    color: white;
+    background-color: #28a745;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-info:hover {
+    background-color: #218838;
+  }
+  
+  /* Make the tutorial link text red */
+  .tutorial-link {
+    color: red !important;
+  }
+  
+  /* Registration section styling */
+  .registration {
+    margin-top: 20px;
+    text-align: center; /* Center the links */
+  }
+  
+  .registration a {
+    display: inline-block;
+    margin: 10px 0; /* Add some spacing between links */
+  }
+  
+  /* Registration link styling */
+  .registration-link {
+    font-size: 14px;
+    color: #1f14a3;
+  }
+  
+  .registration-link strong u {
+    font-weight: normal;
+  }
+  
+  /* Blinking effect */
+  .blinking {
+    animation: blinking 1.5s infinite;
+  }
+  
+  @keyframes blinking {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .loginform-section {
+      padding: 15px;
+      min-height: 400px;
+    }
+  
+    .registration {
+      text-align: center;
+    }
+  }
+  

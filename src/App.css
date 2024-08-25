@@ -1,38 +1,158 @@
-.App {
+/* General container styles */
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Style for each section (Note, Document, LoginForm) */
+.section-container {
+  background: #ffffff;
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px; /* Space between rows */
+  height: 95%; /* Ensure sections take full height of the column */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for sections */
+.section-container:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Ensures consistent spacing for columns */
+.col-md-4 {
+  padding: 10px;
+  flex: 1;
+  min-width: 350px; /* Ensures better scaling */
+  max-width: 50%;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 767px) {
+  .col-md-4 {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style for Important Label */
+.important-label {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  color: green;
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.important-label .blinking {
+  color: red;
+  animation: blinking 1s infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes blinking {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Note Section */
+.note-section {}
+
+.note-title {
+  text-align: center;
+  color: #007bff; /* Blue color */
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.note-list {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Document Section */
+.document-section {}
+
+.document-title {
+  text-align: center;
+  color: green;
+  text-decoration: underline;
 }
+
+.document-subtitle {
+  text-align: center;
+  color: #007bff; /* Blue color */
+  text-decoration: underline;
+}
+
+.document-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* LoginForm Section */
+.loginform-section {
+  text-align: center;
+}
+
+.loginform-title {
+  text-align: center;
+  color: #007bff; /* Blue color */
+  text-decoration: underline;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.form-control {
+  border-radius: 5px;
+  border-color: #007bff;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-info {
+  margin-top: 10px;
+}
+
+.loginform-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loginform-section input,
+.loginform-section button {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+

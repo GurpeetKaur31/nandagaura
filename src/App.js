@@ -23,7 +23,7 @@ function App() {
       </div>
       <div className="container-fluid" style={{ 
         marginTop: '20px', 
-        background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,66,209,1) 11%, rgba(129,210,233,1) 66%)',
+        background: 'linear-gradient(243deg, rgba(2,0,36,1) 0%, rgba(66,66,209,1) 11%, rgba(129,210,233,1) 66%)',
         padding: '20px'
       }}>
         <div className="row">

@@ -1,24 +1,34 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
+import "../Styles/Header.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faExternalLinkAlt, faUser, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
-    <nav className="navbar" style={{ margin: 0, backgroundColor: '#1f14a3' }}>
-      <div className="container-fluid">
-        <div className="navbar-header">
-          <a className="navbar-brand" href="#" style={{ color: 'white' }}>
-            उत्तराखंड सरकार | Gov.t of Uttarakhand
-          </a>
-        </div>
-        <ul className="nav navbar-nav navbar-right">
-          <li><Link to="/" style={{ color: 'white' }}><i className="fa fa-home"></i></Link></li>
-          <li><a href="https://wecd.uk.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><u>Official Website</u> <i className="fa fa-external-link"></i></a></li>
-          <li><Link to="/admin" style={{ color: 'white' }}>Login(Admin) <i className="fa fa-user"></i></Link></li>
-          <li><Link to="/contact" style={{ color: 'white' }}>Contact Us <i className="fa fa-sign-in"></i></Link></li>
-        </ul>
+    <Nav className="navbar-custom">
+      <div className='nav-logo-container'>
+        <a className="navbar-brand" href="#" style={{ color: 'white' }}>
+          उत्तराखंड सरकार | Gov.t of Uttarakhand
+        </a>
       </div>
-    </nav>
+
+      <div className='navbar-links-container'>
+        <Link to='/' className="nav-link-custom">
+          <FontAwesomeIcon icon={faHome} />
+        </Link>
+        <a href="https://wecd.uk.gov.in/" target="_blank" rel="noopener noreferrer" className="nav-link-custom">
+          <u>Official Website</u> <FontAwesomeIcon icon={faExternalLinkAlt} />
+        </a>
+        <Link to="/admin" className="nav-link-custom">
+          Login(Admin) <FontAwesomeIcon icon={faUser} />
+        </Link>
+        <Link to="/contact" className="nav-link-custom">
+          Contact Us <FontAwesomeIcon icon={faSignInAlt} />
+        </Link>
+      </div>
+    </Nav>
   );
 }
 

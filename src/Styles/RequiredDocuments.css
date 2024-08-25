@@ -1,0 +1,123 @@
+/* General styles for document sections */
+.documents-section {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* For smooth hover effect */
+    position: relative;
+    z-index: 1;
+}
+
+.documents-section:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+.section-title {
+    font-size: 24px;
+    color: #2c3e50;
+    border-bottom: 3px solid #1abc9c; /* Changed to teal for a modern look */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title::before {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #1abc9c;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-radius: 3px;
+}
+
+/* Document list styles */
+.documents-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.document-item {
+    font-size: 17px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+    color: #34495e;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+    position: relative;
+}
+
+.document-item:hover {
+    color: #1abc9c; /* Changed to teal */
+    padding-left: 5px; /* Slight padding for hover effect */
+}
+
+/* PDF download button styling */
+.download-btn {
+    background: linear-gradient(135deg, #1abc9c, #16a085); /* Gradient shades of teal */
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase; /* For modern typography */
+    letter-spacing: 1px;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #16a085, #1abc9c); /* Inverted gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn i {
+    margin-left: 8px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.download-btn:hover i {
+    transform: translateX(3px); /* Subtle icon movement on hover */
+}
+
+/* Optional: Add a subtle transition effect for better user experience */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.documents-section {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .documents-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .document-item {
+        font-size: 16px;
+    }
+
+    .download-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

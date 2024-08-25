@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footer-custom">
       <div className="footer-content">
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2023 नंदा गौरा योजना | WECDUK . All Rights Reserved</p>
         <div className="footer-links">
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="footer-link">
             <FontAwesomeIcon icon={faFacebook} />

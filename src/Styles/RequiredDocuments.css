@@ -16,28 +16,23 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Title styling */
+/* Title styling with background color */
 .section-title {
     font-size: 24px;
-    color: #2c3e50;
-    border-bottom: 3px solid #1abc9c; /* Changed to teal for a modern look */
-    padding-bottom: 10px;
+    color: #ffffff; /* Text color should contrast with background */
+    background-color: #1a73bc; /* Background color */
+    border-radius: 5px; /* Rounded corners for the background */
+    border-bottom: 3px solid #1a7ebc; /* Keep the border */
+    padding: 10px 15px; /* Padding around the text */
     margin-bottom: 20px;
     font-weight: 700;
     position: relative;
 }
 
+/* Remove the before pseudo-element to avoid double styling */
 .section-title::before {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background-color: #1abc9c;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    border-radius: 3px;
+    content: none;
 }
-
 /* Document list styles */
 .documents-list {
     list-style-type: none;
@@ -46,7 +41,7 @@
 }
 
 .document-item {
-    font-size: 17px;
+    font-size: 16px;
     padding: 12px 0;
     border-bottom: 1px solid #ecf0f1;
     color: #34495e;
@@ -55,13 +50,13 @@
 }
 
 .document-item:hover {
-    color: #1abc9c; /* Changed to teal */
+    color: #1a27bc; /* Changed to teal */
     padding-left: 5px; /* Slight padding for hover effect */
 }
 
 /* PDF download button styling */
 .download-btn {
-    background: linear-gradient(135deg, #1abc9c, #16a085); /* Gradient shades of teal */
+    background: linear-gradient(135deg, #3ca1d3, #105682); /* Gradient shades of teal */
     color: #fff;
     border: none;
     padding: 12px 18px;
@@ -76,7 +71,7 @@
 }
 
 .download-btn:hover {
-    background: linear-gradient(135deg, #16a085, #1abc9c); /* Inverted gradient on hover */
+    background: linear-gradient(135deg, #0e88d3, #084171); /* Inverted gradient on hover */
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }

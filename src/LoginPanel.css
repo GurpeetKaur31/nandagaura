@@ -1,0 +1,21 @@
+.login-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px; /* Space between radio button options */
+  }
+  
+  .login-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-option input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label */
+  }
+  
+  .login-option label {
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  

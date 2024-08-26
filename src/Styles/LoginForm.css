@@ -125,3 +125,55 @@
     }
   }
   
+  /* LoginForm.css */
+
+.fancy-button {
+  background: linear-gradient(45deg, #1f14a3, #4e73df);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.fancy-button:hover {
+  background: #4e73df;
+  transform: scale(1.05);
+}
+
+.fancy-input {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #1f14a3;
+}
+
+.fancy-select {
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #1f14a3;
+}
+
+.fancy-modal .modal-content {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header-custom {
+  background-color: #1f14a3;
+  color: white;
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.btn-custom {
+  border-radius: 30px;
+  background: #1f14a3;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background: #4e73df;
+}

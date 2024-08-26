@@ -1,7 +1,7 @@
 import React from 'react';
-import logoUK from '../../images/uk_logo.jpeg';
-import logoICDS from '../../images/icds.jpeg';
-import "../../Styles/Jump.css"
+import logoUK from '../images/uk_logo.jpeg';
+import logoICDS from '../images/icds.jpeg';
+import "../Styles/Jump.css";
 
 const Jump = () => {
   return (

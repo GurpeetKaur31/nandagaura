@@ -1,21 +1,79 @@
+/* LoginPanel.css */
+
+/* Global Styles */
+body {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Light gradient background for the whole page */
+  font-family: 'Arial', sans-serif; /* Modern font family */
+  color: #333; /* Dark text color for contrast */
+}
+
+.card {
+  border-radius: 12px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensure content fits within rounded corners */
+}
+
+.form-login {
+  background: radial-gradient(circle at top left, #ffffff, #e0e8f0); /* Radial gradient for form background */
+  border-radius: 12px; /* Rounded corners for the form */
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer, more prominent shadow */
+}
+
+.form-login-heading {
+  background: linear-gradient(135deg, #e93e3e, #a60101); /* Gradient from blue to darker blue */
+  color: #fff; /* White text color */
+  padding: 20px 25px; /* Increased padding for better spacing */
+  border-radius: 10px; /* Rounded corners for the heading */
+  font-size: 1.5rem; /* Larger font size for a bolder look */
+  display: flex;
+  align-items: center;
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.form-login-heading svg {
+  margin-left: 15px; /* More space between text and icon */
+}
+
 .login-options {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    gap: 20px; /* Space between radio button options */
-  }
-  
-  .login-option {
-    display: flex;
-    align-items: center;
-  }
-  
-  .login-option input[type="radio"] {
-    margin-right: 10px; /* Space between radio button and label */
-  }
-  
-  .login-option label {
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  gap: 20px; /* Space between options */
+  margin-top: 25px; /* Space above the options */
+}
+
+.login-option {
+  display: flex;
+  align-items: center;
+  font-size: 15px; /* Slightly larger font size for readability */
+  padding: 15px; /* Padding around each option */
+  border-radius: 8px; /* More rounded corners for options */
+  background: #ffffff; /* White background for options */
+  border: 1px solid #d0d7de; /* Light border for a cleaner look */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.login-option:hover {
+  background-color: #e3f2fd; /* Light blue background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+.login-option input[type="radio"] {
+  margin-right: 12px; /* Space between radio button and label */
+  accent-color: #007bff; /* Blue accent color for the radio button */
+}
+
+.login-option label {
+  cursor: pointer;
+  display: inline-block;
+  user-select: none; /* Prevent text selection on click */
+}
+
+/* Adjust container styling */
+.container {
+  max-width: 1000px; /* Adjust width to better fit larger screens */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 25px; /* Padding inside the container */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for a light overlay effect */
+  border-radius: 12px; /* Rounded corners for the container */
+}

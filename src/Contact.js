@@ -7,11 +7,12 @@ import ContactDetails from './Components/ContactPanel/ContactDetails';
 import EmailForm from './Components/ContactPanel/EmailForm';
 import ContactForm from './Components/ContactPanel/ContactForm';
 import AddressForm from './Components/ContactPanel/AddressForm';
+import './Contact.css'
 
 function Contact() {
   return (
     <div>
-      <div className='card shadow'>
+      <div className='card shadow '>
         <Header />
       </div>
       <div>

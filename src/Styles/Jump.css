@@ -1,54 +1,85 @@
 .jump-container {
-    background-color: white;
-    margin: 15px auto;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+  background-color: white;
+  margin: 30px auto;
+  padding: 40px;
+  padding-top: 100px; /* Adjust if necessary */
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.jump-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.logo-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.uk-logo {
+  float: right;
+  margin-right: 30px;
+}
+
+.icds-logo {
+  float: left;
+  margin-left: 30px;
+}
+
+.main-title {
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #080f7e;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.sub-title {
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #cc0000;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
   .logo-img {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-    display: block;
+    width: 100px;
+    height: 100px;
   }
-  
-  .uk-logo {
-    float: right;
-    margin-right: 20px;
+
+  .jump-container {
+    padding: 20px;
+    margin: 20px;
   }
-  
-  .icds-logo {
-    float: left;
-    margin-left: 20px;
-  }
-  
+}
+
+@media (max-width: 576px) {
   .main-title {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    font-weight: 700;
-    text-decoration: underline;
-    color: blue;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
   }
-  
+
   .sub-title {
-    font-family: 'Hind', sans-serif;
-    text-align: center;
-    font-weight: 700;
-    text-decoration: underline;
-    color: #ff0000;
+    font-size: 1.2rem;
   }
-  
-  @media (max-width: 768px) {
-    .logo-img {
-      width: 70px;
-      height: 70px;
-    }
-    
-    .jump-container {
-      padding: 10px;
-      margin: 10px;
-    }
+
+  .logo-img {
+    width: 80px;
+    height: 80px;
   }
-  
+}

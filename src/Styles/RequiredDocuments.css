@@ -6,7 +6,7 @@
     margin-bottom: 25px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden; /* For smooth hover effect */
+    overflow: hidden;
     position: relative;
     z-index: 1;
 }
@@ -19,21 +19,16 @@
 /* Title styling with background color */
 .section-title {
     font-size: 24px;
-    color: #ffffff; /* Text color should contrast with background */
-    background-color: #1a73bc; /* Background color */
-    border-radius: 5px; /* Rounded corners for the background */
-    border-bottom: 3px solid #1a7ebc; /* Keep the border */
-    padding: 10px 15px; /* Padding around the text */
+    color: #ffffff;
+    background-color: #1a73bc;
+    border-radius: 5px;
+    padding: 10px 15px;
     margin-bottom: 20px;
     font-weight: 700;
     position: relative;
 }
 
-/* Remove the before pseudo-element to avoid double styling */
-.section-title::before {
-    content: none;
-}
-/* Document list styles */
+/* Enhanced document list styles */
 .documents-list {
     list-style-type: none;
     padding: 0;
@@ -47,16 +42,19 @@
     color: #34495e;
     transition: color 0.3s ease, padding-left 0.3s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .document-item:hover {
-    color: #1a27bc; /* Changed to teal */
-    padding-left: 5px; /* Slight padding for hover effect */
+    color: #1a27bc;
+    padding-left: 5px;
 }
 
 /* PDF download button styling */
 .download-btn {
-    background: linear-gradient(135deg, #3ca1d3, #105682); /* Gradient shades of teal */
+    background: linear-gradient(135deg, #3ca1d3, #105682);
     color: #fff;
     border: none;
     padding: 12px 18px;
@@ -66,12 +64,13 @@
     display: inline-block;
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase; /* For modern typography */
+    text-transform: uppercase;
     letter-spacing: 1px;
+    margin-left: 10px; /* Slight spacing from the document text */
 }
 
 .download-btn:hover {
-    background: linear-gradient(135deg, #0e88d3, #084171); /* Inverted gradient on hover */
+    background: linear-gradient(135deg, #0e88d3, #084171);
     transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
@@ -83,10 +82,10 @@
 }
 
 .download-btn:hover i {
-    transform: translateX(3px); /* Subtle icon movement on hover */
+    transform: translateX(3px);
 }
 
-/* Optional: Add a subtle transition effect for better user experience */
+/* Keyframes for subtle animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -115,4 +114,42 @@
         padding: 10px 15px;
         font-size: 14px;
     }
+}
+
+/* Styling for the carousel container */
+.slider_first {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Styling for carousel items */
+.slider_first .item {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.slider_first .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for carousel items */
+.slider_first .item:hover img {
+    transform: scale(1.05);
+}
+
+.slider_first .item span {
+    display: block;
+    font-size: 16px;
+    color: #343a40;
+    margin-top: 5px;
 }

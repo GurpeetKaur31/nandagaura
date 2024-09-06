@@ -42,9 +42,7 @@ const LoginPanel = () => {
         <Header />
       </div>
 
-      <div className="container mt-4">
-        <Jump />
-      </div>
+      <Jump/>
 
       <div className="container col-sm-8 mt-4">
         <form className="form-login" action="" method="POST">

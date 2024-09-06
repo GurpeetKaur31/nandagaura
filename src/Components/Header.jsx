@@ -19,13 +19,13 @@ function Header() {
           <FontAwesomeIcon icon={faHome} /> Home
         </Link>
         <a href="https://wecd.uk.gov.in/" target="_blank" rel="noopener noreferrer" className="nav-link-custom">
-          <u>Official Website</u> <FontAwesomeIcon icon={faExternalLinkAlt} />
+        <FontAwesomeIcon icon={faExternalLinkAlt} /><u>Official Website</u> 
         </a>
         <Link to="/login" className="nav-link-custom">
-          Login (Admin) <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={faUser} />Login (Admin) 
         </Link>
         <Link to="/contact" className="nav-link-custom">
-          Contact Us <FontAwesomeIcon icon={faSignInAlt} />
+        <FontAwesomeIcon icon={faSignInAlt} />Contact Us 
         </Link>
       </div>
     </Nav>

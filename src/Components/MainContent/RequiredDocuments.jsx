@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../Styles/RequiredDocuments.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload} from '@fortawesome/free-solid-svg-icons';
 
 const RequiredDocuments = ({ title, documents }) => {
   return (
@@ -9,6 +11,11 @@ const RequiredDocuments = ({ title, documents }) => {
         {documents.map((doc, index) => (
           <div key={index} className="document-item">
             {doc}
+            {doc.props.href && (
+              <button className="download-btn">
+                <FontAwesomeIcon icon={faDownload} />
+              </button>
+            )}
           </div>
         ))}
       </div>

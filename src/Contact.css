@@ -1,0 +1,8 @@
+h2 {
+    font-size: 1.5rem; /* Smaller font size for headings */
+    margin-bottom: 20px; /* Space below headings */
+  }
+
+  p, label, input, textarea {
+    font-size: 0.875rem; /* Decreased font size for paragraphs, labels, inputs, and textareas */
+  }
